@@ -1,0 +1,37 @@
+// Name: Yosh1code
+// Description: This program is a Fahrenheit to Celsius converter.
+
+
+package Homework1;
+import java.util.Scanner; // Import the Scanner class.
+
+public class Homework1   			
+{
+    public static void main(String[] args) 
+	{
+	   Scanner scan = new Scanner(System.in); // Create a Scanner object
+	  
+	   double celsiusTemp;
+	
+	   System.out.print("Please enter a temperature in Fahrenheit as an integer: "); // Enter an integer
+	   int i1 = scan.nextInt(); // Scan an int.
+	   
+	   celsiusTemp = (5.0/9) * (i1-32); // Fahrenheit Temperature to Celsius calculator
+	   
+	   System.out.println(i1 + " degrees F is equal to " + celsiusTemp + " degrees C."); //Prints out the Fahrenheit equivalent into Celsius
+	   
+	   
+	   if (celsiusTemp <= 0) {
+		System.out.println("Water will freeze at " + celsiusTemp + " degrees C."); // Prints out it will freeze if CelsiusTemp  is less than or equal to 0 
+	   }
+	   
+	  else if (celsiusTemp >= 100) {
+		System.out.println("Water will boil at " + celsiusTemp + " degrees C."); // Prints out it will boil if CelsiusTemp is greater than or equal to 100 
+	   }
+	   
+	  else {
+		System.out.println("Water will nor freeze or boil at " + celsiusTemp + " degrees C."); // Prints out it will neither freeze nor boil if its between 1 - 99
+	   }
+	}
+}
+
